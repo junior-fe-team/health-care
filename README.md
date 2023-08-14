@@ -25,10 +25,12 @@ $ yarn dev
 <table>
   <tr>
     <td align="center">
-      <img src="" width="100px;" alt=""/>
+      <img src="![kyz](https://github.com/junior-fe-team/health-care/assets/82385282/89286306-00da-4c2e-bc1b-5d272988c4c0)
+" width="100px;" alt=""/>
     </td>
     <td align="center">
-      <img src="" width="100px;" alt=""/>
+      <img src="![jgy](https://github.com/junior-fe-team/health-care/assets/82385282/c96e07b0-f114-4846-986e-6c75ac72f516)
+" width="100px;" alt=""/>
     </td>  
   </tr>
   <tr>    
