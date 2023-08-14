@@ -21,16 +21,13 @@ $ yarn dev
 각 기능을 개발할 때 `feat/example`과 같이 브랜치를 생성하여 작업후, dev 브랜치에서 합치고 release 브랜치에서 배포하는 전략을 세웠습니다.
 
 ## 팀원
-
 <table>
   <tr>
     <td align="center">
-      <img src="![kyz](https://github.com/junior-fe-team/health-care/assets/82385282/89286306-00da-4c2e-bc1b-5d272988c4c0)
-" width="100px;" alt=""/>
+      <img src="https://github.com/junior-fe-team/health-care/assets/82385282/a5fdb7bc-c8ef-4abf-bc15-30e71901b50b" width="100px;" alt=""/>
     </td>
     <td align="center">
-      <img src="![jgy](https://github.com/junior-fe-team/health-care/assets/82385282/c96e07b0-f114-4846-986e-6c75ac72f516)
-" width="100px;" alt=""/>
+      <img src="https://github.com/junior-fe-team/health-care/assets/82385282/967c6b4a-6078-4dc2-8f37-c9cd9bd99f41" width="100px;" alt=""/>
     </td>  
   </tr>
   <tr>    
