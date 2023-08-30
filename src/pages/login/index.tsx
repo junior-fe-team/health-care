@@ -77,6 +77,7 @@ export default function Login() {
             noValidate
             onSubmit={handleSubmit}
             sx={{ mt: 1 }}
+            maxWidth={500}
           >
             <TextField
               margin="normal"

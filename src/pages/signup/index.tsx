@@ -34,7 +34,6 @@ export default function Signup() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      username: data.get("username"),
       email: data.get("email"),
       password: data.get("password"),
     });
@@ -71,13 +70,14 @@ export default function Signup() {
         >
           <Avatar sx={{ m: 1, bgcolor: "SkyBlue" }} />
           <Typography component="h1" variant="h5">
-            Email Sign Up
+            Email Login
           </Typography>
           <Box
             component="form"
             noValidate
             onSubmit={handleSubmit}
             sx={{ mt: 1 }}
+            maxWidth={500}
           >
             <TextField
               margin="normal"
@@ -86,7 +86,7 @@ export default function Signup() {
               id="username"
               label="User Name"
               name="username"
-              autoComplete="name"
+              autoComplete="username"
               autoFocus
             />
             <TextField
@@ -97,7 +97,6 @@ export default function Signup() {
               label="Email Address"
               name="email"
               autoComplete="email"
-              autoFocus
             />
             <TextField
               margin="normal"
