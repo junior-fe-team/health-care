@@ -29,11 +29,12 @@ function Copyright(props: any) {
   );
 }
 
-export default function Login() {
+export default function Signup() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
+      username: data.get("username"),
       email: data.get("email"),
       password: data.get("password"),
     });
@@ -70,7 +71,7 @@ export default function Login() {
         >
           <Avatar sx={{ m: 1, bgcolor: "SkyBlue" }} />
           <Typography component="h1" variant="h5">
-            Email Login
+            Email Sign Up
           </Typography>
           <Box
             component="form"
@@ -78,6 +79,16 @@ export default function Login() {
             onSubmit={handleSubmit}
             sx={{ mt: 1 }}
           >
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="username"
+              label="User Name"
+              name="username"
+              autoComplete="name"
+              autoFocus
+            />
             <TextField
               margin="normal"
               required
@@ -104,38 +115,16 @@ export default function Login() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Login
+              Sign Up
             </Button>
             <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
+              <Grid item xs />
               <Grid item>
                 <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                  {"Already have an account? Login"}
                 </Link>
               </Grid>
             </Grid>
-            <Box
-              sx={{
-                mt: 5,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
-              <Typography component="h1" variant="h5">
-                Social Login
-              </Typography>
-              <Button fullWidth variant="contained" sx={{ mt: 3, mb: 2 }}>
-                Google Login
-              </Button>
-              <Button fullWidth variant="contained" sx={{ mt: 2, mb: 2 }}>
-                KaKao Login
-              </Button>
-            </Box>
             <Copyright sx={{ mt: 5 }} />
           </Box>
         </Box>
