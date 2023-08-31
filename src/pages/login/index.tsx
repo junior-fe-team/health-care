@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Grid,
   CssBaseline,
@@ -9,7 +9,7 @@ import {
   Button,
   Link,
   Paper,
-} from "@mui/material";
+} from '@mui/material';
 
 function Copyright(props: any) {
   return (
@@ -19,28 +19,28 @@ function Copyright(props: any) {
       align="center"
       {...props}
     >
-      {"Copyright © "}
+      {'Copyright © '}
       <Link color="inherit" href="#">
         HealthCare
-      </Link>{" "}
+      </Link>{' '}
       {new Date().getFullYear()}
-      {"."}
+      {'.'}
     </Typography>
   );
 }
 
-export default function Login() {
+function Login() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      email: data.get("email"),
-      password: data.get("password"),
+      email: data.get('email'),
+      password: data.get('password'),
     });
   };
 
   return (
-    <Grid container component="main" sx={{ height: "100vh" }}>
+    <Grid container component="main" sx={{ height: '100vh' }}>
       <CssBaseline />
       <Grid
         item
@@ -48,14 +48,14 @@ export default function Login() {
         sm={4}
         md={7}
         sx={{
-          backgroundImage: "url(https://source.unsplash.com/random?wallpapers)",
-          backgroundRepeat: "no-repeat",
+          backgroundImage: 'url(https://source.unsplash.com/random?wallpapers)',
+          backgroundRepeat: 'no-repeat',
           backgroundColor: (t) =>
-            t.palette.mode === "light"
+            t.palette.mode === 'light'
               ? t.palette.grey[50]
               : t.palette.grey[900],
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       />
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
@@ -63,12 +63,12 @@ export default function Login() {
           sx={{
             my: 8,
             mx: 4,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "SkyBlue" }} />
+          <Avatar sx={{ m: 1, bgcolor: 'SkyBlue' }} />
           <Typography component="h1" variant="h5">
             Email Login
           </Typography>
@@ -122,9 +122,9 @@ export default function Login() {
             <Box
               sx={{
                 mt: 5,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
               }}
             >
               <Typography component="h1" variant="h5">
@@ -144,3 +144,7 @@ export default function Login() {
     </Grid>
   );
 }
+
+Login.noLayout = true;
+
+export default Login;
